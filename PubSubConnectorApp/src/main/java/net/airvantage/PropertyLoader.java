@@ -14,14 +14,14 @@ public class PropertyLoader {
      * @return a Properties object including all values
      */
     public static Properties load(String filename) throws IOException, FileNotFoundException {
-        Properties properties = new Properties();
-        FileInputStream input = new FileInputStream(filename);
-        try {
+     Properties properties = new Properties();
+     FileInputStream input = new FileInputStream(filename);
+     try {
             properties.load(input);
             return properties;
-        } finally {
+     } finally {
             input.close();
-        }
+     }
     }
 }
 	
