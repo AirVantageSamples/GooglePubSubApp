@@ -16,7 +16,7 @@ The configuration file `conf.properties` contains :
 Running
 --------------------
  
-Set your credentials using the  command line  "gcloud auth login"  that enables a web-based authorization (you can revoke your credentials for a specific account using  using gcloud auth revoke 'account')
+Set your credentials using the  command line  "gcloud auth login"  that enables a web-based authorization (you can revoke your credentials for a specific account using: gcloud auth revoke 'account')
  
 The configuration file `config.properties` has to be adapted,
 
