@@ -9,8 +9,6 @@ package net.airvantage;
 
 public class SubApp {
 
-	private static GooglePubSubConnector connector;
-
 	/**
 	 * This method connects to the Pub Sub platform in order to retrieve
 	 * messages from a google topic via a subscription and acknowledge them
@@ -18,9 +16,9 @@ public class SubApp {
 	 */
 
 	public static void main(String args[]) {
-
-		connector = new GooglePubSubConnector();
-		connector.launch();
+                DataHandler dataHandler = new DataHandler();
+		GooglePubSubConnector connector = new GooglePubSubConnector();
+		connector.launch(dataHandler);
 
 	}
 

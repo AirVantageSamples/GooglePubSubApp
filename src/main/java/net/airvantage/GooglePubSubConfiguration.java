@@ -47,7 +47,7 @@ public class GooglePubSubConfiguration {
 		Properties prop = null;
 		// loading properties
 		try {
-			prop = PropertyLoader.load("config.properties");
+			prop = PropertyLoader.load("conf.properties");
 			error = false;
 		} catch (Exception e0) {
 

@@ -21,11 +21,15 @@ public class MessagesProcessor {
 	private DataHandler dataHandler;
 
 	/**
-	 * initializing the messages processor
+	 * This is the MessagesProcessor constructor, it creates an instance of
+	 * MessagesProcessor
+	 * 
+	 * @param dataHandler
+	 *            is the object that handles received data
 	 */
 
-	public void initialize() {
-		dataHandler = new DataHandler();
+	public MessagesProcessor(DataHandler dataHandler) {
+		this.dataHandler = dataHandler;
 	}
 
 	/**
@@ -66,3 +70,4 @@ public class MessagesProcessor {
 	}
 
 }
+

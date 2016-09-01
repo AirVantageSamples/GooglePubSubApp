@@ -35,7 +35,7 @@ public class Worker {
 	public Worker(PubsubClient client, MessagesProcessor messagesProcessor) {
 		this.client = client;
 		this.messagesProcessor = messagesProcessor;
-		this.messagesProcessor.initialize();
+
 	}
 
 	/**
@@ -80,3 +80,4 @@ public class Worker {
 		this.messagesProcessor.processMessages(pubsubMessages, ackIDs, client);
 	}
 }
+
